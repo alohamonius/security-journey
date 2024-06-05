@@ -1,0 +1,16 @@
+# Sample Configurations
+
+# Send 100 requests to each target
+count = 100
+# Enable verbose logging
+verbose = true
+# Use an http proxy for all connections
+proxy = "http://127.0.0.1:8080"
+
+# Specify the first request
+[[requests]]
+    method = "POST"
+    url = "http://localhost:3000/rest/products/reviews"
+    body = "{\"id\":\"AYyC7inbBSfC4NtNG\"}"
+    cookies = ["PHPSESSIONID=12345","JSESSIONID=67890"]
+    headers = ["Content-Type: application/json", "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6eyJpZCI6NiwidXNlcm5hbWUiOiIiLCJlbWFpbCI6InN1cHBvcnRAanVpY2Utc2gub3AiLCJwYXNzd29yZCI6IjM4Njk0MzNkNzRlM2QwYzg2ZmQyNTU2MmY4MzZiYzgyIiwicm9sZSI6ImFkbWluIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6IiIsInByb2ZpbGVJbWFnZSI6ImFzc2V0cy9wdWJsaWMvaW1hZ2VzL3VwbG9hZHMvZGVmYXVsdEFkbWluLnBuZyIsInRvdHBTZWNyZXQiOiIiLCJpc0FjdGl2ZSI6dHJ1ZSwiY3JlYXRlZEF0IjoiMjAyNC0wNS0xNyAwOTo1ODoyMC4wMjkgKzAwOjAwIiwidXBkYXRlZEF0IjoiMjAyNC0wNS0xNyAwOTo1ODoyMC4wMjkgKzAwOjAwIiwiZGVsZXRlZEF0IjpudWxsfSwiaWF0IjoxNzE3NTAzNzU0fQ.ftBD3OXkM7p9Qk_YBl-YUeLu5_PlwNywk_DgVvDnOL_ZMQUJXB3mrkg_OKuYxyPV74kIz3bToYxjgIZYRnDnFM8z3vdUxbWnyUA7Nz3ghU3E9tlAIKKyKzIRZpMDmNbQ_Tmm2F9ydmv1IFaT3owlziTX9cOFqE83BEzkLxVgtu0"]

@@ -1,0 +1,9 @@
+brew install nmap (network discovery)
+brew install gobuster (files & directories, dictionary based)
+brew install netcat (read/write network)
+brew install metasploit (execute)
+brew install exploitdb (repo with examples)
+brew install john (password cracking)
+
+brew install sidaf/pentest/dirb
+
