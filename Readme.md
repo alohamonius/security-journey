@@ -1,0 +1,3 @@
+- [x] Bandit Game (https://overthewire.org/wargames/bandit)
+- [x] ISC2
+- [x] THM Advent Calendar 2024
